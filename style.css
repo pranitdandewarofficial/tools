@@ -1,0 +1,136 @@
+:root {
+  --bg: #0f172a;
+  --card-bg: #1e293b;
+  --primary: #3b82f6;
+  --text: #f1f5f9;
+  --muted: #94a3b8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  padding: 2rem 1.5rem;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #a5f3fc, #c084fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 0.5rem;
+}
+header p { color: var(--muted); }
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+.filter-btn {
+  background: #334155;
+  border: none;
+  color: #e2e8f0;
+  padding: 0.5rem 1.5rem;
+  border-radius: 40px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.filter-btn:hover { background: #475569; }
+.filter-btn.active {
+  background: var(--primary);
+  color: white;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.tool-card {
+  background: var(--card-bg);
+  border-radius: 24px;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #334155;
+  transition: transform 0.15s, border-color 0.15s;
+  display: block;
+}
+.tool-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary);
+}
+
+.tool-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.tool-icon {
+  font-size: 2.2rem;
+  background: #0f172a;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+}
+.tool-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.useful-for-label {
+  color: #a5b4fc;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+.useful-for-text {
+  font-size: 1rem;
+  color: #e2e8f0;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.tool-category {
+  display: inline-block;
+  background: #2d3a52;
+  padding: 0.25rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  color: #cbd5e1;
+}
+
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  color: var(--muted);
+}
+code {
+  background: #1e293b;
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+}
