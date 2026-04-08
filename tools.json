@@ -1,0 +1,37 @@
+[
+  {
+    "name": "ChatGPT",
+    "usefulFor": "Writing, brainstorming, coding help, research",
+    "icon": "💬",
+    "category": "LLM Chat",
+    "url": "https://chat.openai.com"
+  },
+  {
+    "name": "Claude",
+    "usefulFor": "Long context analysis, document Q&A, creative writing",
+    "icon": "🧠",
+    "category": "LLM Chat",
+    "url": "https://claude.ai"
+  },
+  {
+    "name": "Midjourney",
+    "usefulFor": "AI image generation from text prompts",
+    "icon": "🎨",
+    "category": "Image",
+    "url": "https://midjourney.com"
+  },
+  {
+    "name": "Perplexity",
+    "usefulFor": "AI search with citations, deep research",
+    "icon": "🔍",
+    "category": "Search",
+    "url": "https://perplexity.ai"
+  },
+  {
+    "name": "Gamma",
+    "usefulFor": "Create presentations and docs with AI",
+    "icon": "📊",
+    "category": "Productivity",
+    "url": "https://gamma.app"
+  }
+]
